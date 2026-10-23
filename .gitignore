@@ -1,6 +1,4 @@
-# --- Datos crudos pesados (NO se suben: el notebook cae al URL público de la TLC) ---
-data/*.parquet
-# (se conserva data/taxi_zone_lookup.csv, que es pequeño)
+
 
 # --- Python ---
 __pycache__/

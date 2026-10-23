@@ -9,14 +9,15 @@ en una app de Streamlit que consulta su propia API.
 
 | Pieza | Link |
 |---|---|
-| App (Streamlit Community Cloud) | `https://<completar>.streamlit.app` |
-| API (Render) · su `/docs` debe abrir | `https://<completar>.onrender.com` |
-| Repositorio (público) | `https://github.com/<completar>` |
+| App (Streamlit Community Cloud) | `https://taxis-nyc-cmme3awb5eye6j6xpadl5u.streamlit.app/?zona=161` |
+| API (Render) · su `/docs` debe abrir | `https://taxis-nyc-api-tug5.onrender.com/` |
+| Repositorio (público) | `https://github.com/javierandino1765/taxis-nyc` |
 
 ## Integrantes
 
-- <Nombre 1>
-- <Nombre 2>
+- Alexia Carolina Guevara Mendoza
+- Oscar Jasher Villalta Yada
+- Javier Alejandro Andino García
 
 ## Estructura del repositorio
 
