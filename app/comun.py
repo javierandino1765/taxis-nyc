@@ -594,8 +594,8 @@ def regla_rango(p10, p50, p90, real=None, tope=None) -> str:
 def api_url() -> str:
     """La dirección de la API: primero st.secrets, luego lo que el usuario escriba,
     y en último caso localhost (para desarrollo)."""
-    if "API_URL_manual" in st.session_state and st.session_state["API_URL_manual"]:
-        return st.session_state["API_URL_manual"].rstrip("/")
+    if st.session_state.get("API_URL_guardada"):
+        return st.session_state["API_URL_guardada"]
     try:
         return st.secrets["API_URL"].rstrip("/")   # función avanzada: st.secrets
     except Exception:
@@ -647,6 +647,7 @@ def barra_lateral_api() -> dict | None:
                 "Dirección de la API",
                 value=api_url(),
                 key="API_URL_manual",
+                on_change=_guardar_api_url,
                 help="En producción se define en Secrets como API_URL. Aquí puedes "
                      "sobrescribirla para pruebas (p. ej. http://localhost:8000).",
             )
@@ -654,6 +655,10 @@ def barra_lateral_api() -> dict | None:
                 st.cache_data.clear()
                 st.rerun()
     return info
+
+
+def _guardar_api_url():
+    st.session_state["API_URL_guardada"] = st.session_state["API_URL_manual"].strip().rstrip("/")
 
 
 def _aviso_api_caida(error: Exception):
