@@ -1,0 +1,63 @@
+# Tema "Taxis NYC": asfalto, amarillo taxi y tipografia de señalizacion vial (Barlow).
+# Funcion avanzada: .streamlit/config.toml
+
+[theme]
+base = "light"
+primaryColor = "#1C2128"
+backgroundColor = "#F3F4F6"
+secondaryBackgroundColor = "#E8EAED"
+textColor = "#1C2128"
+borderColor = "#D9DDE2"
+dataframeBorderColor = "#E3E6EA"
+dataframeHeaderBackgroundColor = "#F3F4F6"
+showWidgetBorder = true
+baseRadius = "0.45rem"
+font = "Barlow"
+headingFont = "Barlow Condensed"
+metricValueFontSize = "2.05rem"
+metricValueFontWeight = 600
+headingFontWeights = [700, 600, 600, 600, 600, 600]
+chartCategoricalColors = ["#2B59C3", "#7B4FBF", "#C98A00", "#1A8F7A", "#D2333F", "#5A6470"]
+greenColor = "#1A8F7A"
+redColor = "#D2333F"
+
+[[theme.fontFaces]]
+family = "Barlow"
+url = "app/static/Barlow-Regular.ttf"
+weight = 400
+[[theme.fontFaces]]
+family = "Barlow"
+url = "app/static/Barlow-Medium.ttf"
+weight = 500
+[[theme.fontFaces]]
+family = "Barlow"
+url = "app/static/Barlow-SemiBold.ttf"
+weight = 600
+[[theme.fontFaces]]
+family = "Barlow Condensed"
+url = "app/static/BarlowCondensed-Medium.ttf"
+weight = 500
+[[theme.fontFaces]]
+family = "Barlow Condensed"
+url = "app/static/BarlowCondensed-SemiBold.ttf"
+weight = 600
+[[theme.fontFaces]]
+family = "Barlow Condensed"
+url = "app/static/BarlowCondensed-Bold.ttf"
+weight = 700
+
+[theme.sidebar]
+backgroundColor = "#1C2128"
+secondaryBackgroundColor = "#2A313A"
+textColor = "#E6E8EB"
+primaryColor = "#F2B705"
+borderColor = "#3A424D"
+font = "Barlow"
+headingFont = "Barlow Condensed"
+
+[server]
+enableStaticServing = true
+maxUploadSize = 50
+
+[client]
+toolbarMode = "minimal"

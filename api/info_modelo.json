@@ -1,0 +1,328 @@
+{
+  "variables": [
+    "hora_dia",
+    "dia_semana",
+    "feriado",
+    "lag_24",
+    "lag_48",
+    "lag_168",
+    "lag_167",
+    "lag_169",
+    "media_dia_ant",
+    "zona"
+  ],
+  "cuantiles": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "horizonte_horas": 24,
+  "fechas": [
+    "2024-01-25",
+    "2024-01-26",
+    "2024-01-27",
+    "2024-01-28",
+    "2024-01-29",
+    "2024-01-30",
+    "2024-01-31",
+    "2024-02-01"
+  ],
+  "zonas": [
+    {
+      "id": 4,
+      "nombre": "Alphabet City",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 13,
+      "nombre": "Battery Park City",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 24,
+      "nombre": "Bloomingdale",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 41,
+      "nombre": "Central Harlem",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 42,
+      "nombre": "Central Harlem North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 43,
+      "nombre": "Central Park",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 45,
+      "nombre": "Chinatown",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 48,
+      "nombre": "Clinton East",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 50,
+      "nombre": "Clinton West",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 68,
+      "nombre": "East Chelsea",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 70,
+      "nombre": "East Elmhurst",
+      "distrito": "Queens"
+    },
+    {
+      "id": 74,
+      "nombre": "East Harlem North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 75,
+      "nombre": "East Harlem South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 79,
+      "nombre": "East Village",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 87,
+      "nombre": "Financial District North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 88,
+      "nombre": "Financial District South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 90,
+      "nombre": "Flatiron",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 100,
+      "nombre": "Garment District",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 107,
+      "nombre": "Gramercy",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 113,
+      "nombre": "Greenwich Village North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 114,
+      "nombre": "Greenwich Village South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 125,
+      "nombre": "Hudson Sq",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 132,
+      "nombre": "JFK Airport",
+      "distrito": "Queens"
+    },
+    {
+      "id": 137,
+      "nombre": "Kips Bay",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 138,
+      "nombre": "LaGuardia Airport",
+      "distrito": "Queens"
+    },
+    {
+      "id": 140,
+      "nombre": "Lenox Hill East",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 141,
+      "nombre": "Lenox Hill West",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 142,
+      "nombre": "Lincoln Square East",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 143,
+      "nombre": "Lincoln Square West",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 144,
+      "nombre": "Little Italy/NoLiTa",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 148,
+      "nombre": "Lower East Side",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 151,
+      "nombre": "Manhattan Valley",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 158,
+      "nombre": "Meatpacking/West Village West",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 161,
+      "nombre": "Midtown Center",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 162,
+      "nombre": "Midtown East",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 163,
+      "nombre": "Midtown North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 164,
+      "nombre": "Midtown South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 166,
+      "nombre": "Morningside Heights",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 170,
+      "nombre": "Murray Hill",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 186,
+      "nombre": "Penn Station/Madison Sq West",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 209,
+      "nombre": "Seaport",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 211,
+      "nombre": "SoHo",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 224,
+      "nombre": "Stuy Town/Peter Cooper Village",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 229,
+      "nombre": "Sutton Place/Turtle Bay North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 230,
+      "nombre": "Times Sq/Theatre District",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 231,
+      "nombre": "TriBeCa/Civic Center",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 232,
+      "nombre": "Two Bridges/Seward Park",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 233,
+      "nombre": "UN/Turtle Bay South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 234,
+      "nombre": "Union Sq",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 236,
+      "nombre": "Upper East Side North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 237,
+      "nombre": "Upper East Side South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 238,
+      "nombre": "Upper West Side North",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 239,
+      "nombre": "Upper West Side South",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 246,
+      "nombre": "West Chelsea/Hudson Yards",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 249,
+      "nombre": "West Village",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 261,
+      "nombre": "World Trade Center",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 262,
+      "nombre": "Yorkville East",
+      "distrito": "Manhattan"
+    },
+    {
+      "id": 263,
+      "nombre": "Yorkville West",
+      "distrito": "Manhattan"
+    }
+  ]
+}

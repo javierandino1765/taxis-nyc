@@ -1,0 +1,20 @@
+# --- Datos crudos pesados (NO se suben: el notebook cae al URL público de la TLC) ---
+data/*.parquet
+# (se conserva data/taxi_zone_lookup.csv, que es pequeño)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- Secrets de Streamlit (nunca subir) ---
+.streamlit/secrets.toml
+app/.streamlit/secrets.toml
+
+# --- Sistema operativo / editor ---
+.DS_Store
+Thumbs.db
+.vscode/

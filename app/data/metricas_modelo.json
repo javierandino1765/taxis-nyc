@@ -1,0 +1,37 @@
+{
+  "mae_modelo": 11.54,
+  "mae_semanal": 11.88,
+  "mae_diario": 21.29,
+  "mejora_vs_semanal_pct": 2.9,
+  "cobertura_80": 81.8,
+  "cobertura_zona_min": 63.0,
+  "cobertura_zona_max": 91.0,
+  "n_horas_prueba": 9744,
+  "n_zonas_pronostico": 58,
+  "n_zonas_segmentar": 100,
+  "n_grupos": 4,
+  "pca_var_pct": 66.0,
+  "error_vs_reglas": {
+    "Igual que ayer": 21.29,
+    "Igual que hace una semana": 11.88,
+    "Modelo (mediana)": 11.54
+  },
+  "error_por_tipo_zona": {
+    "Aeropuertos": 17.86,
+    "Barrios periféricos": 2.5,
+    "Manhattan central": 12.4,
+    "Vida nocturna": 9.05
+  },
+  "silueta_por_k": {
+    "2": 0.344,
+    "3": 0.381,
+    "4": 0.411,
+    "5": 0.364,
+    "6": 0.389,
+    "7": 0.377
+  },
+  "entrenamiento": "1-24 de enero de 2024",
+  "prueba": "25-31 de enero de 2024",
+  "horizonte": "24 horas (pronóstico del día anterior)",
+  "modelo": "XGBoost · 9 cuantiles"
+}
