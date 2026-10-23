@@ -109,4 +109,4 @@ st.plotly_chart(comun.fig_taxis(fig2), width="stretch", theme=None, config={"dis
                 key="graf_alarma")
 
 st.caption("El umbral (porcentaje y horas) es una decisión: muy sensible y la alarma “grita” tanto que "
-           "nadie le hace caso; muy laxa y llega tarde.")
+           "nadie le hace caso.")
