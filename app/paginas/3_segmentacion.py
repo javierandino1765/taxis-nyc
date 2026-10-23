@@ -140,5 +140,4 @@ if metricas and metricas.get("silueta_por_k"):
                         config={"displayModeBar": False}, key="graf_silueta")
         st.caption("En nuestros datos la silueta es más alta justo en k = 4 (0.41): la métrica y el "
                    "negocio coinciden. Cuatro grupos dan la mejor separación y, a la vez, una "
-                   "estrategia comercial accionable; k = 2 sería demasiado grueso. La métrica guía, "
-                   "y aquí también la respalda.")
+                   "estrategia comercial accionable.")
